@@ -1,179 +1,781 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit Converter (km ↔ mi)</title>
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom font for a clean, modern look */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f1f5f9; /* Light gray background */
-        }
-        /* Custom focus state for accessibility and aesthetics */
-        input:focus, select:focus, button:focus {
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.4);
-        }
-    </style>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 25.2.6.2 (Linux)"/>
+	<meta name="created" content="2025-10-27T01:29:32.031952993"/>
+	<meta name="changed" content="2025-10-27T01:32:38.722801451"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+	</style>
 </head>
-<body class="flex items-center justify-center min-h-screen p-4">
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p style="font-weight: normal; margin-bottom: 0in; line-height: 0.2in">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#569cd6">&lt;!DOCTYPE</font><font color="#9cdcfe">
+html</font><font color="#569cd6">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">html</font>
+<font color="#9cdcfe">lang</font><font color="#808080">=</font><font color="#ce9178">&quot;en&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">head</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">meta</font>
+<font color="#9cdcfe">charset</font><font color="#808080">=</font><font color="#ce9178">&quot;UTF-8&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">meta</font>
+<font color="#9cdcfe">name</font><font color="#808080">=</font><font color="#ce9178">&quot;viewport&quot;</font>
+<font color="#9cdcfe">content</font><font color="#808080">=</font><font color="#ce9178">&quot;width=device-width,
+initial-scale=1.0&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">title</font><font color="#808080">&gt;</font>Unit
+Converter (km ↔ mi ↔ nm)<font color="#808080">&lt;/</font><font color="#569cd6">title</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">&lt;!--
+Load Tailwind CSS --&gt;</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">script</font>
+<font color="#9cdcfe">src</font><font color="#808080">=</font><font color="#ce9178">&quot;https://cdn.tailwindcss.com&quot;</font><font color="#808080">&gt;&lt;/</font><font color="#569cd6">script</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">style</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">/*
+Custom font for a clean, modern look */</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">@import</font>
+<font color="#ce9178">url</font><font color="#dcdcdc">(</font><font color="#81c995">'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap'</font><font color="#dcdcdc">);</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#569cd6">body</font>
+<font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#9cdcfe">font-family:</font>
+<font color="#81c995">'Inter'</font><font color="#dcdcdc">,</font>
+<font color="#ce9178">sans-serif</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#9cdcfe">background-color:</font>
+#f1f5f9<font color="#dcdcdc">;</font> <font color="#80868b">/* Light
+gray background */</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">}</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">/*
+Custom focus state for accessibility and aesthetics */</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#569cd6">input:focus</font><font color="#dcdcdc">,</font>
+<font color="#569cd6">select:focus</font><font color="#dcdcdc">,</font>
+<font color="#569cd6">button:focus</font> <font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#9cdcfe">outline:</font>
+<font color="#ce9178">none</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#9cdcfe">box-shadow:</font>
+<font color="#b5cea8">0</font> <font color="#b5cea8">0</font> <font color="#b5cea8">0</font>
+<font color="#b5cea8">3px</font> <font color="#ce9178">rgba(</font><font color="#b5cea8">99</font><font color="#dcdcdc">,</font>
+<font color="#b5cea8">102</font><font color="#dcdcdc">,</font> <font color="#b5cea8">241</font><font color="#dcdcdc">,</font>
+<font color="#b5cea8">0.4</font><font color="#ce9178">)</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">}</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">style</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">head</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">body</font>
+<font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;flex
+items-center justify-center min-h-screen p-4&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-    <div class="w-full max-w-lg bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">div</font>
+<font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;w-full
+max-w-lg bg-white p-8 rounded-2xl shadow-xl border border-gray-100&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-        <!-- Title and Description -->
-        <header class="text-center mb-8">
-            <h1 class="text-3xl font-bold text-indigo-600">Kilometers ↔ Miles Converter</h1>
-            <p class="text-gray-500 mt-2">Convert distances with precision and ease.</p>
-        </header>
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">&lt;!--
+Title and Description --&gt;</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">header</font>
+<font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;text-center
+mb-8&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">h1</font>
+<font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;text-3xl
+font-bold text-indigo-600&quot;</font><font color="#808080">&gt;</font>Distance
+Unit Converter<font color="#808080">&lt;/</font><font color="#569cd6">h1</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">p</font>
+<font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;text-gray-500
+mt-2&quot;</font><font color="#808080">&gt;</font>Convert between
+Kilometers (km), Miles (mi), and Nautical Miles (nm).<font color="#808080">&lt;/</font><font color="#569cd6">p</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">header</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-        <!-- Input Form Container -->
-        <div class="space-y-6">
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">&lt;!--
+Input Form Container --&gt;</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">div</font>
+<font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;space-y-6&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-            <!-- Input Value -->
-            <div>
-                <label for="inputValue" class="block text-sm font-medium text-gray-700 mb-2">Value to Convert</label>
-                <input type="number" id="inputValue" value="100" min="0" placeholder="Enter number..."
-                       class="w-full p-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out text-lg"
-                       aria-label="Input value for conversion">
-            </div>
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">&lt;!--
+Input Value --&gt;</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">div</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">label</font>
+<font color="#9cdcfe">for</font><font color="#808080">=</font><font color="#ce9178">&quot;inputValue&quot;</font>
+<font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;block
+text-sm font-medium text-gray-700 mb-2&quot;</font><font color="#808080">&gt;</font>Value
+to Convert<font color="#808080">&lt;/</font><font color="#569cd6">label</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">input</font>
+<font color="#9cdcfe">type</font><font color="#808080">=</font><font color="#ce9178">&quot;number&quot;</font>
+<font color="#9cdcfe">id</font><font color="#808080">=</font><font color="#ce9178">&quot;inputValue&quot;</font>
+<font color="#9cdcfe">value</font><font color="#808080">=</font><font color="#ce9178">&quot;100&quot;</font>
+<font color="#9cdcfe">min</font><font color="#808080">=</font><font color="#ce9178">&quot;0&quot;</font>
+<font color="#9cdcfe">placeholder</font><font color="#808080">=</font><font color="#ce9178">&quot;Enter
+number...&quot;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;w-full
+p-3 border border-gray-300 rounded-lg focus:ring-indigo-500
+focus:border-indigo-500 transition duration-150 ease-in-out text-lg&quot;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#9cdcfe">aria-label</font><font color="#808080">=</font><font color="#ce9178">&quot;Input
+value for conversion&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">div</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-            <!-- Conversion Direction Selector -->
-            <div>
-                <label for="conversionDirection" class="block text-sm font-medium text-gray-700 mb-2">Conversion Direction</label>
-                <div class="relative">
-                    <select id="conversionDirection"
-                            class="appearance-none w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out text-lg pr-10"
-                            aria-label="Select conversion direction">
-                        <option value="km_to_mi">Kilometers (km) → Miles (mi)</option>
-                        <option value="mi_to_km">Miles (mi) → Kilometers (km)</option>
-                    </select>
-                    <!-- Custom Arrow Icon -->
-                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">&lt;!--
+Conversion Direction Selector --&gt;</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">div</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">label</font>
+<font color="#9cdcfe">for</font><font color="#808080">=</font><font color="#ce9178">&quot;conversionDirection&quot;</font>
+<font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;block
+text-sm font-medium text-gray-700 mb-2&quot;</font><font color="#808080">&gt;</font>Conversion
+Direction<font color="#808080">&lt;/</font><font color="#569cd6">label</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">div</font>
+<font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;relative&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">select</font>
+<font color="#9cdcfe">id</font><font color="#808080">=</font><font color="#ce9178">&quot;conversionDirection&quot;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;appearance-none
+w-full p-3 border border-gray-300 rounded-lg bg-white
+focus:ring-indigo-500 focus:border-indigo-500 transition duration-150
+ease-in-out text-lg pr-10&quot;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#9cdcfe">aria-label</font><font color="#808080">=</font><font color="#ce9178">&quot;Select
+conversion direction&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">option</font>
+<font color="#9cdcfe">value</font><font color="#808080">=</font><font color="#ce9178">&quot;km_to_mi&quot;</font><font color="#808080">&gt;</font>Kilometers
+(km) → Miles (mi)<font color="#808080">&lt;/</font><font color="#569cd6">option</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">option</font>
+<font color="#9cdcfe">value</font><font color="#808080">=</font><font color="#ce9178">&quot;mi_to_km&quot;</font><font color="#808080">&gt;</font>Miles
+(mi) → Kilometers (km)<font color="#808080">&lt;/</font><font color="#569cd6">option</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">option</font>
+<font color="#9cdcfe">value</font><font color="#808080">=</font><font color="#ce9178">&quot;km_to_nm&quot;</font><font color="#808080">&gt;</font>Kilometers
+(km) → Nautical Miles (nm)<font color="#808080">&lt;/</font><font color="#569cd6">option</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">option</font>
+<font color="#9cdcfe">value</font><font color="#808080">=</font><font color="#ce9178">&quot;nm_to_km&quot;</font><font color="#808080">&gt;</font>Nautical
+Miles (nm) → Kilometers (km)<font color="#808080">&lt;/</font><font color="#569cd6">option</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">option</font>
+<font color="#9cdcfe">value</font><font color="#808080">=</font><font color="#ce9178">&quot;mi_to_nm&quot;</font><font color="#808080">&gt;</font>Miles
+(mi) → Nautical Miles (nm)<font color="#808080">&lt;/</font><font color="#569cd6">option</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">option</font>
+<font color="#9cdcfe">value</font><font color="#808080">=</font><font color="#ce9178">&quot;nm_to_mi&quot;</font><font color="#808080">&gt;</font>Nautical
+Miles (nm) → Miles (mi)<font color="#808080">&lt;/</font><font color="#569cd6">option</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">select</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">&lt;!--
+Custom Arrow Icon --&gt;</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">div</font>
+<font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;pointer-events-none
+absolute inset-y-0 right-0 flex items-center px-2 text-gray-700&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">svg</font>
+<font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;h-5
+w-5&quot;</font> <font color="#9cdcfe">xmlns</font><font color="#808080">=</font><font color="#ce9178">&quot;http://www.w3.org/2000/svg&quot;</font>
+<font color="#9cdcfe">viewBox</font><font color="#808080">=</font><font color="#ce9178">&quot;0
+0 20 20&quot;</font> <font color="#9cdcfe">fill</font><font color="#808080">=</font><font color="#ce9178">&quot;currentColor&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">path</font>
+<font color="#9cdcfe">fill-rule</font><font color="#808080">=</font><font color="#ce9178">&quot;evenodd&quot;</font>
+<font color="#9cdcfe">d</font><font color="#808080">=</font><font color="#ce9178">&quot;M5.293
+7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4
+4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z&quot;</font>
+<font color="#9cdcfe">clip-rule</font><font color="#808080">=</font><font color="#ce9178">&quot;evenodd&quot;</font>
+<font color="#808080">/&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">svg</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">div</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">div</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">div</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-            <!-- Convert Button -->
-            <button onclick="convertUnit()"
-                    class="w-full py-3 px-4 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition duration-200 ease-in-out text-lg transform hover:scale-[1.01] active:scale-[0.99]"
-                    aria-live="polite">
-                Convert
-            </button>
-        </div>
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">&lt;!--
+Convert Button --&gt;</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">button</font>
+<font color="#9cdcfe">onclick</font><font color="#808080">=</font><font color="#ce9178">&quot;convertUnit()&quot;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;w-full
+py-3 px-4 bg-indigo-600 text-white font-semibold rounded-lg shadow-md
+hover:bg-indigo-700 transition duration-200 ease-in-out text-lg
+transform hover:scale-[1.01] active:scale-[0.99]&quot;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#9cdcfe">aria-live</font><font color="#808080">=</font><font color="#ce9178">&quot;polite&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">Convert</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">button</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">div</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-        <!-- Output Result Section -->
-        <div class="mt-8 pt-6 border-t border-gray-200">
-            <h2 class="text-xl font-semibold text-gray-800 mb-3">Result:</h2>
-            <div id="outputResult"
-                 class="min-h-[64px] flex items-center justify-center p-4 bg-indigo-50 rounded-xl border-2 border-indigo-200 text-3xl font-extrabold text-indigo-800 transition-all duration-300">
-                Enter values and click 'Convert'.
-            </div>
-        </div>
-    </div>
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">&lt;!--
+Output Result Section --&gt;</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">div</font>
+<font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;mt-8
+pt-6 border-t border-gray-200&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">h2</font>
+<font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;text-xl
+font-semibold text-gray-800 mb-3&quot;</font><font color="#808080">&gt;</font>Result:<font color="#808080">&lt;/</font><font color="#569cd6">h2</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">div</font>
+<font color="#9cdcfe">id</font><font color="#808080">=</font><font color="#ce9178">&quot;outputResult&quot;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#9cdcfe">class</font><font color="#808080">=</font><font color="#ce9178">&quot;min-h-[64px]
+flex items-center justify-center p-4 bg-indigo-50 rounded-xl border-2
+border-indigo-200 text-3xl font-extrabold text-indigo-800
+transition-all duration-300&quot;</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">Enter
+values and click 'Convert'.</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">div</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">div</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">div</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-    <!-- JavaScript Logic -->
-    <script>
-        // Constants for conversion factors
-        // The standard convention: 1 mile = 1.60934 kilometers
-        const MILES_PER_KM = 0.621371; // 1 km is approx 0.621371 miles
-        const KM_PER_MILE = 1.60934;  // 1 mi is approx 1.60934 kilometers
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">&lt;!--
+JavaScript Logic --&gt;</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;</font><font color="#569cd6">script</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+--- Conversion Constants ---</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+1 mile (mi) = 1.60934 kilometers (km)</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+<font color="#3dc9b0">MILES_PER_KM</font> <font color="#dcdcdc">=</font>
+<font color="#fa903e">0.621371</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+<font color="#3dc9b0">KM_PER_MILE</font> <font color="#dcdcdc">=</font>
+<font color="#fa903e">1.60934</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-        /**
-         * Clears the result area and shows a temporary status message.
-         * @param {string} message - The message to display (e.g., 'Loading...')
-         * @param {string} className - Optional Tailwind classes for styling (e.g., error red)
-         */
-        function displayMessage(message, className = 'text-gray-500 font-medium text-lg') {
-            const resultElement = document.getElementById('outputResult');
-            resultElement.innerHTML = message;
-            // Reset and apply temporary classes
-            resultElement.className = "min-h-[64px] flex items-center justify-center p-4 rounded-xl transition-all duration-300 " + className;
-            // Restore default styling after showing the error/status, unless it's the final result
-            if (!className.includes('text-3xl')) {
-                setTimeout(() => {
-                     // Reapply the default success state classes
-                    resultElement.className = "min-h-[64px] flex items-center justify-center p-4 bg-indigo-50 rounded-xl border-2 border-indigo-200 text-3xl font-extrabold text-indigo-800 transition-all duration-300";
-                    resultElement.innerHTML = "Enter values and click 'Convert'.";
-                }, 3000);
-            }
-        }
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+1 Nautical Mile (nm) = 1.852 kilometers (km)</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+<font color="#3dc9b0">KM_PER_NM</font> <font color="#dcdcdc">=</font>
+<font color="#fa903e">1.852</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+<font color="#3dc9b0">NM_PER_KM</font> <font color="#dcdcdc">=</font>
+<font color="#fa903e">1</font> <font color="#dcdcdc">/</font>
+<font color="#3dc9b0">KM_PER_NM</font><font color="#dcdcdc">;</font>
+<font color="#80868b">// ~ 0.539957 nm per km</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-        /**
-         * Main function to perform the unit conversion based on user input and selection.
-         */
-        function convertUnit() {
-            const inputElement = document.getElementById('inputValue');
-            const directionElement = document.getElementById('conversionDirection');
-            const resultElement = document.getElementById('outputResult');
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Factor to convert Miles to Nautical Miles (mi -&gt; nm)</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+1 mi = 1.60934 km; 1 nm = 1.852 km</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+1 mi = 1.60934 / 1.852 nm = ~ 0.868976 nm</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+<font color="#3dc9b0">NM_PER_MILE</font> <font color="#dcdcdc">=</font>
+<font color="#3dc9b0">KM_PER_MILE</font> <font color="#dcdcdc">/</font>
+<font color="#3dc9b0">KM_PER_NM</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+1 nm = 1.852 km; 1 km = 0.621371 mi</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+1 nm = 1.852 * 0.621371 mi = ~ 1.15078 mi</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+<font color="#3dc9b0">MILES_PER_NM</font> <font color="#dcdcdc">=</font>
+<font color="#fa903e">1</font> <font color="#dcdcdc">/</font>
+<font color="#3dc9b0">NM_PER_MILE</font><font color="#dcdcdc">;</font>
+<font color="#80868b">// ~ 1.15078 mi per nm</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0.2in"><br/>
+<br/>
 
-            const inputValue = parseFloat(inputElement.value);
-            const direction = directionElement.value;
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">/**</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">*
+Clears the result area and shows a temporary status message.</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">*
+@param {string} message - The message to display.</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">*
+@param {string} className - Tailwind classes for styling (e.g., error
+red).</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">*/</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">function</font>
+displayMessage<font color="#dcdcdc">(</font>message<font color="#dcdcdc">,</font>
+className<font color="#dcdcdc">)</font> <font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+resultElement <font color="#dcdcdc">=</font>
+document<font color="#dcdcdc">.</font>getElementById<font color="#dcdcdc">(</font><font color="#81c995">'outputResult'</font><font color="#dcdcdc">);</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">resultElement<font color="#dcdcdc">.</font>innerHTML
+<font color="#dcdcdc">=</font> message<font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Reset and apply temporary classes</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">resultElement<font color="#dcdcdc">.</font>className
+<font color="#dcdcdc">=</font> <font color="#81c995">&quot;min-h-[64px]
+flex items-center justify-center p-4 rounded-xl transition-all
+duration-300 &quot;</font> <font color="#dcdcdc">+</font> className<font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-            // 1. Input Validation
-            if (isNaN(inputValue) || inputValue <= 0) {
-                // Display error message instead of using alert()
-                displayMessage(
-                    '❌ Please enter a valid positive number.',
-                    'bg-red-100 border-2 border-red-400 text-red-700 font-medium text-lg'
-                );
-                return;
-            }
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Restore default styling after showing the error/status</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">if</font>
+<font color="#dcdcdc">(!</font>className<font color="#dcdcdc">.</font>includes<font color="#dcdcdc">(</font><font color="#81c995">'text-3xl'</font><font color="#dcdcdc">))</font>
+<font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">setTimeout<font color="#dcdcdc">(()</font>
+<font color="#dcdcdc">=&gt;</font> <font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Reapply the default success state classes</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">resultElement<font color="#dcdcdc">.</font>className
+<font color="#dcdcdc">=</font> <font color="#81c995">&quot;min-h-[64px]
+flex items-center justify-center p-4 bg-indigo-50 rounded-xl border-2
+border-indigo-200 text-3xl font-extrabold text-indigo-800
+transition-all duration-300&quot;</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">resultElement<font color="#dcdcdc">.</font>innerHTML
+<font color="#dcdcdc">=</font> <font color="#81c995">&quot;Enter
+values and click 'Convert'.&quot;</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#dcdcdc">},</font>
+<font color="#fa903e">3000</font><font color="#dcdcdc">);</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">}</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">}</span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-            let result = 0;
-            let resultUnit = '';
-            let originalUnit = '';
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">/**</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">*
+Main function to perform the unit conversion based on user input and
+selection.</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">*/</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">function</font>
+convertUnit<font color="#dcdcdc">()</font> <font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+inputElement <font color="#dcdcdc">=</font>
+document<font color="#dcdcdc">.</font>getElementById<font color="#dcdcdc">(</font><font color="#81c995">'inputValue'</font><font color="#dcdcdc">);</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+directionElement <font color="#dcdcdc">=</font>
+document<font color="#dcdcdc">.</font>getElementById<font color="#dcdcdc">(</font><font color="#81c995">'conversionDirection'</font><font color="#dcdcdc">);</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-            // 2. Perform Calculation based on Direction
-            if (direction === 'km_to_mi') {
-                // Kilometers to Miles
-                result = inputValue * MILES_PER_KM;
-                resultUnit = 'mi';
-                originalUnit = 'km';
-            } else if (direction === 'mi_to_km') {
-                // Miles to Kilometers
-                result = inputValue * KM_PER_MILE;
-                resultUnit = 'km';
-                originalUnit = 'mi';
-            } else {
-                // Should not happen, but good for robustness
-                displayMessage(
-                    '⚠️ Invalid conversion direction selected.',
-                    'bg-yellow-100 border-2 border-yellow-400 text-yellow-700 font-medium text-lg'
-                );
-                return;
-            }
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+inputString <font color="#dcdcdc">=</font> inputElement<font color="#dcdcdc">.</font>value<font color="#dcdcdc">.</font>trim<font color="#dcdcdc">();</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+inputValue <font color="#dcdcdc">=</font> parseFloat<font color="#dcdcdc">(</font>inputString<font color="#dcdcdc">);</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+direction <font color="#dcdcdc">=</font> directionElement<font color="#dcdcdc">.</font>value<font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-            // 3. Format and Display Output
-            const formattedInput = inputValue.toLocaleString('en-US', { maximumFractionDigits: 2 });
-            const formattedResult = result.toLocaleString('en-US', { maximumFractionDigits: 4 }); // Use 4 for better precision
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+--- 1. Enhanced Input Validation ---</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">if</font>
+<font color="#dcdcdc">(</font>inputString <font color="#dcdcdc">===</font>
+<font color="#81c995">''</font><font color="#dcdcdc">)</font> <font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">displayMessage<font color="#dcdcdc">(</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#81c995">'❌
+Input value cannot be empty.'</font><font color="#dcdcdc">,</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#81c995"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">'bg-red-100
+border-2 border-red-400 text-red-700 font-medium text-lg'</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">);</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">return</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">}</span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-            const outputHtml = `
-                ${formattedResult} ${resultUnit}
-                <span class="text-lg font-normal text-indigo-500 block mt-1">
-                    (${formattedInput} ${originalUnit})
-                </span>
-            `;
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">if</font>
+<font color="#dcdcdc">(</font>isNaN<font color="#dcdcdc">(</font>inputValue<font color="#dcdcdc">))</font>
+<font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">displayMessage<font color="#dcdcdc">(</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#81c995">'❌
+Please enter a valid number.'</font><font color="#dcdcdc">,</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#81c995"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">'bg-red-100
+border-2 border-red-400 text-red-700 font-medium text-lg'</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">);</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">return</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">}</span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-            // Display the final result
-            resultElement.innerHTML = outputHtml;
-            // Ensure final result class remains the primary styling
-            resultElement.className = "min-h-[64px] flex flex-col items-center justify-center p-4 bg-indigo-50 rounded-xl border-2 border-indigo-200 text-3xl font-extrabold text-indigo-800 transition-all duration-300";
-        }
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">if</font>
+<font color="#dcdcdc">(</font>inputValue <font color="#dcdcdc">&lt;</font>
+<font color="#fa903e">0</font><font color="#dcdcdc">)</font> <font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Although the input field has min=&quot;0&quot;, users can still paste
+negative numbers.</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">displayMessage<font color="#dcdcdc">(</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#81c995">'❌
+Please enter a non-negative number.'</font><font color="#dcdcdc">,</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#81c995"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">'bg-red-100
+border-2 border-red-400 text-red-700 font-medium text-lg'</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">);</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">return</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">}</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+--- End Input Validation ---</span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
 
-        // Optional: Trigger conversion on Enter key press in the input field
-        document.getElementById('inputValue').addEventListener('keypress', function(event) {
-            if (event.key === 'Enter') {
-                convertUnit();
-                event.preventDefault(); // Prevent default form submission if it were a form
-            }
-        });
-    </script>
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">let</font>
+result <font color="#dcdcdc">=</font> <font color="#fa903e">0</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">let</font>
+resultUnit <font color="#dcdcdc">=</font> <font color="#81c995">''</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">let</font>
+originalUnit <font color="#dcdcdc">=</font> <font color="#81c995">''</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+--- 2. Perform Calculation based on Direction (Updated with Nautical
+Miles) ---</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">if</font>
+<font color="#dcdcdc">(</font>direction <font color="#dcdcdc">===</font>
+<font color="#81c995">'km_to_mi'</font><font color="#dcdcdc">)</font>
+<font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Kilometers to Miles</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">result
+<font color="#dcdcdc">=</font> inputValue <font color="#dcdcdc">*</font>
+<font color="#3dc9b0">MILES_PER_KM</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">resultUnit
+<font color="#dcdcdc">=</font> <font color="#81c995">'mi'</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">originalUnit
+<font color="#dcdcdc">=</font> <font color="#81c995">'km'</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#dcdcdc">}</font>
+<font color="#c58af9">else</font> <font color="#c58af9">if</font>
+<font color="#dcdcdc">(</font>direction <font color="#dcdcdc">===</font>
+<font color="#81c995">'mi_to_km'</font><font color="#dcdcdc">)</font>
+<font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Miles to Kilometers</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">result
+<font color="#dcdcdc">=</font> inputValue <font color="#dcdcdc">*</font>
+<font color="#3dc9b0">KM_PER_MILE</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">resultUnit
+<font color="#dcdcdc">=</font> <font color="#81c995">'km'</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">originalUnit
+<font color="#dcdcdc">=</font> <font color="#81c995">'mi'</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#dcdcdc">}</font>
+<font color="#c58af9">else</font> <font color="#c58af9">if</font>
+<font color="#dcdcdc">(</font>direction <font color="#dcdcdc">===</font>
+<font color="#81c995">'km_to_nm'</font><font color="#dcdcdc">)</font>
+<font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Kilometers to Nautical Miles</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">result
+<font color="#dcdcdc">=</font> inputValue <font color="#dcdcdc">*</font>
+<font color="#3dc9b0">NM_PER_KM</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">resultUnit
+<font color="#dcdcdc">=</font> <font color="#81c995">'nm'</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">originalUnit
+<font color="#dcdcdc">=</font> <font color="#81c995">'km'</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#dcdcdc">}</font>
+<font color="#c58af9">else</font> <font color="#c58af9">if</font>
+<font color="#dcdcdc">(</font>direction <font color="#dcdcdc">===</font>
+<font color="#81c995">'nm_to_km'</font><font color="#dcdcdc">)</font>
+<font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Nautical Miles to Kilometers</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">result
+<font color="#dcdcdc">=</font> inputValue <font color="#dcdcdc">*</font>
+<font color="#3dc9b0">KM_PER_NM</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">resultUnit
+<font color="#dcdcdc">=</font> <font color="#81c995">'km'</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">originalUnit
+<font color="#dcdcdc">=</font> <font color="#81c995">'nm'</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#dcdcdc">}</font>
+<font color="#c58af9">else</font> <font color="#c58af9">if</font>
+<font color="#dcdcdc">(</font>direction <font color="#dcdcdc">===</font>
+<font color="#81c995">'mi_to_nm'</font><font color="#dcdcdc">)</font>
+<font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Miles to Nautical Miles</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">result
+<font color="#dcdcdc">=</font> inputValue <font color="#dcdcdc">*</font>
+<font color="#3dc9b0">NM_PER_MILE</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">resultUnit
+<font color="#dcdcdc">=</font> <font color="#81c995">'nm'</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">originalUnit
+<font color="#dcdcdc">=</font> <font color="#81c995">'mi'</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#dcdcdc">}</font>
+<font color="#c58af9">else</font> <font color="#c58af9">if</font>
+<font color="#dcdcdc">(</font>direction <font color="#dcdcdc">===</font>
+<font color="#81c995">'nm_to_mi'</font><font color="#dcdcdc">)</font>
+<font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Nautical Miles to Miles</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">result
+<font color="#dcdcdc">=</font> inputValue <font color="#dcdcdc">*</font>
+<font color="#3dc9b0">MILES_PER_NM</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">resultUnit
+<font color="#dcdcdc">=</font> <font color="#81c995">'mi'</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">originalUnit
+<font color="#dcdcdc">=</font> <font color="#81c995">'nm'</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#dcdcdc">}</font>
+<font color="#c58af9">else</font> <font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">displayMessage<font color="#dcdcdc">(</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#81c995">'⚠️
+Invalid conversion direction selected.'</font><font color="#dcdcdc">,</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#81c995"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">'bg-yellow-100
+border-2 border-yellow-400 text-yellow-700 font-medium text-lg'</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">);</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">return</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">}</span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+--- 3. Format and Display Output ---</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+resultElement <font color="#dcdcdc">=</font>
+document<font color="#dcdcdc">.</font>getElementById<font color="#dcdcdc">(</font><font color="#81c995">'outputResult'</font><font color="#dcdcdc">);</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+formattedInput <font color="#dcdcdc">=</font>
+inputValue<font color="#dcdcdc">.</font>toLocaleString<font color="#dcdcdc">(</font><font color="#81c995">'en-US'</font><font color="#dcdcdc">,</font>
+<font color="#dcdcdc">{</font> maximumFractionDigits<font color="#dcdcdc">:</font>
+<font color="#fa903e">4</font> <font color="#dcdcdc">});</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+formattedResult <font color="#dcdcdc">=</font>
+result<font color="#dcdcdc">.</font>toLocaleString<font color="#dcdcdc">(</font><font color="#81c995">'en-US'</font><font color="#dcdcdc">,</font>
+<font color="#dcdcdc">{</font> maximumFractionDigits<font color="#dcdcdc">:</font>
+<font color="#fa903e">6</font> <font color="#dcdcdc">});</font> <font color="#80868b">//
+Use 6 for nautical precision</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">const</font>
+outputHtml <font color="#dcdcdc">=</font> <font color="#81c995">`</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#dcdcdc">${</font>formattedResult<font color="#dcdcdc">}</font><font color="#81c995">
+</font><font color="#dcdcdc">${</font>resultUnit<font color="#dcdcdc">}</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#81c995"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">&lt;span
+class=&quot;text-lg font-normal text-indigo-500 block mt-1&quot;&gt;</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#81c995">(</font><font color="#dcdcdc">${</font>formattedInput<font color="#dcdcdc">}</font><font color="#81c995">
+</font><font color="#dcdcdc">${</font>originalUnit<font color="#dcdcdc">}</font><font color="#81c995">)</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#81c995"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">&lt;/span&gt;</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#81c995">`</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Display the final result</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">resultElement<font color="#dcdcdc">.</font>innerHTML
+<font color="#dcdcdc">=</font> outputHtml<font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Ensure final result class remains the primary styling</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">resultElement<font color="#dcdcdc">.</font>className
+<font color="#dcdcdc">=</font> <font color="#81c995">&quot;min-h-[64px]
+flex flex-col items-center justify-center p-4 bg-indigo-50 rounded-xl
+border-2 border-indigo-200 text-3xl font-extrabold text-indigo-800
+transition-all duration-300&quot;</font><font color="#dcdcdc">;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">}</span></font></font></font></p>
+<p style="line-height: 0.2in; margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#80868b"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">//
+Optional: Trigger conversion on Enter key press in the input field</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">document<font color="#dcdcdc">.</font>getElementById<font color="#dcdcdc">(</font><font color="#81c995">'inputValue'</font><font color="#dcdcdc">).</font>addEventListener<font color="#dcdcdc">(</font><font color="#81c995">'keypress'</font><font color="#dcdcdc">,</font>
+<font color="#c58af9">function</font><font color="#dcdcdc">(</font>event<font color="#dcdcdc">)</font>
+<font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#c58af9">if</font>
+<font color="#dcdcdc">(</font>event<font color="#dcdcdc">.</font>key
+<font color="#dcdcdc">===</font> <font color="#81c995">'Enter'</font><font color="#dcdcdc">)</font>
+<font color="#dcdcdc">{</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">convertUnit<font color="#dcdcdc">();</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">event<font color="#dcdcdc">.</font>preventDefault<font color="#dcdcdc">();</font>
+<font color="#80868b">// Prevent default form submission if it were a
+form</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">}</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#dcdcdc"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20">});</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">script</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">body</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 0.2in; font-weight: normal">
+<font color="#d4d4d4"><font face="Google Sans Mono, Droid Sans Mono, monospace, monospace"><font size="2" style="font-size: 10pt"><span style="background: #1e1f20"><font color="#808080">&lt;/</font><font color="#569cd6">html</font><font color="#808080">&gt;</font></span></font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
 </body>
 </html>
